@@ -1,0 +1,71 @@
+/* Estilos personalizados para la página "Nosotros" */
+body {
+    background-color: #c1e8ff; /* Fondo celeste */
+    color: #021024; /* Texto azul oscuro */
+    overflow-y: scroll;
+    scrollbar-width: none; /* Para Firefox */
+}
+
+body::-webkit-scrollbar {
+    display: none; /* Oculta la barra de desplazamiento vertical en Chrome, Safari y Edge */
+}
+
+.card {
+    background-color: #7da0ca; /* Fondo celeste para las tarjetas */
+    border: none; /* Sin borde */
+}
+
+.card-body {
+    padding: 2rem; /* Espaciado interno */
+}
+
+h1.display-4 {
+    color: #052659; /* Título principal en azul oscuro */
+}
+
+.card-title {
+    color: #052659; /* Título de la tarjeta en azul oscuro */
+    font-weight: bold; /* Negrita */
+}
+
+.card-text {
+    color: #021024; /* Texto de la tarjeta en azul oscuro */
+}
+
+.bg-info {
+    background-color: #052659 !important; /* Fondo azul oscuro */
+}
+
+.text-info {
+    color: #c1e8ff !important; /* Texto celeste */
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .card-body {
+        padding: 1rem; /* Reduce el espaciado interno en pantallas pequeñas */
+    }
+
+    h1.display-4 {
+        font-size: 2.5rem; /* Reduce el tamaño del título en pantallas pequeñas */
+    }
+}
+
+/* Estilos responsivos para los iframes */
+.sketchfab-embed-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+}
+
+.sketchfab-embed-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}

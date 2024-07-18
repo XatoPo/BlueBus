@@ -1,0 +1,74 @@
+/* Estilos personalizados para animaciones y diseño */
+
+/* Estilos generales */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #e8f5ff; /* Fondo celeste */
+    color: #004080; /* Texto azul oscuro */
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #052659; /* Azul más oscuro para títulos */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para la tabla */
+.table {
+    background-color: #f8f9fa; /* Fondo gris claro */
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.table th,
+.table td {
+    padding: 8px;
+    text-align: center;
+    font-size: 16px; /* Tamaño de fuente base */
+}
+
+.table thead th {
+    background-color: #052659; /* Fondo azul oscuro para cabeceras */
+    color: #ffffff; /* Texto blanco para cabeceras */
+}
+
+.table td a {
+    color: #052659; /* Enlaces azul oscuro */
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #052659; /* Fondo azul oscuro */
+    color: #ffffff; /* Texto blanco */
+    padding: 20px 0; /* Espaciado interno */
+    text-align: center;
+}
+
+/* Estilos para el texto informativo en el footer */
+.text-info {
+    color: #021024; /* Texto azul oscuro */
+}
+
+.bg-light {
+    background-color: #f8f9fa;
+}
+
+.bg-info {
+    background-color: #052659 !important;
+}
+
+/* Estilos específicos para pantallas pequeñas */
+@media (max-width: 780px) {
+    .table-responsive {
+        overflow-x: auto; /* Scroll horizontal en tablas responsivas */
+    }
+
+    .table th,
+    .table td {
+        font-size: 8px; /* Reducir tamaño de fuente en pantallas pequeñas */
+        text-align: center;
+        padding: 4px; /* Espaciado reducido */
+    }
+}

@@ -1,0 +1,68 @@
+body {
+    overflow-y: scroll;
+    scrollbar-width: none;
+    background-color: #f8f9fa;
+    color: #021024;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.bg-light {
+    background-color: #f8f9fa;
+}
+
+.bg-info {
+    background-color: #052659 !important;
+}
+
+.text-info {
+    color: #021024;
+}
+
+.viaje-card {
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    min-width: min-content !important;
+    margin-bottom: 20px;
+}
+
+.card {
+    border-color: #ffffff;
+}
+
+.viaje-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.hora-salida h5,
+.hora-llegada h5 {
+    font-size: 1.5em;
+    color: #052659;
+}
+
+.origen-destino p {
+    margin: 0;
+    font-size: 1.2em;
+    color: #021024;
+}
+
+.btn-custom-blue {
+    background-color: #052659;
+    border-color: #052659;
+    color: #ffffff;
+}
+
+.btn-custom-blue:hover {
+    background-color: #021024;
+    border-color: #021024;
+}
+
+.btn-custom-blue:focus {
+    box-shadow: 0 0 0 0.25rem rgba(2, 16, 36, 0.5);
+}

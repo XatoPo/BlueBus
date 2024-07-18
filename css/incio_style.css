@@ -1,0 +1,93 @@
+/* Estilos personalizados para el resto de la página */
+body {
+overflow-y: scroll;
+scrollbar-width: none; /* Para Firefox */
+}
+
+body::-webkit-scrollbar {
+display: none; /* Oculta la barra de desplazamiento vertical en Chrome, Safari y Edge */
+}
+
+body {
+background-color: #c1e8ff; /* Fondo celeste */
+color: #021024; /* Texto azul oscuro */
+}
+
+.carousel-caption {
+background-color: rgba(5, 38, 89, 0.7); /* Fondo semi-transparente azul oscuro para las descripciones en el slider */
+}
+
+.card {
+background-color: #7da0ca; /* Fondo celeste para las tarjetas de destinos */
+border: none; /* Sin borde */
+height: 100%;
+}
+
+.card-body {
+display: flex;
+flex-direction: column;
+}
+
+.card:hover {
+transform: scale(1.05); /* Efecto de escala al hacer hover */
+z-index: 1; /* Se eleva al hacer hover */
+}
+
+.carousel-item img {
+height: 500px; /* Aumenta la altura de las imágenes del slider */
+object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+top: 50%; /* Posiciona los botones de control en el centro vertical */
+transform: translateY(-50%); /* Centra verticalmente los botones de control */
+z-index: 1; /* Asegura que estén encima del contenido del slider */
+color: #5483b3; /* Cambia el color de las flechas del slider */
+}
+
+.bg-light {
+background-color: #c1e8ff; /* Fondo celeste para la sección adicional */
+}
+
+.bg-info {
+background-color: #052659 !important;
+}
+
+.text-info {
+color: #021024; /* Texto azul oscuro para el pie de página */
+}
+
+/* Estilos para el buscador */
+.search-form {
+background-color: #fff;
+border-radius: 5px;
+padding: 20px;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+transition: all 0.3s ease;
+}
+
+.search-form:hover {
+box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.search-form .form-control {
+border-radius: 20px;
+}
+
+.search-form .btn-primary {
+border-radius: 20px;
+}
+
+/* Estilos personalizados para el slider */
+.custom-slider-img {
+height: 600px; /* Ajusta la altura según tus necesidades */
+object-fit: cover; /* Asegura que la imagen se ajuste correctamente */
+}
+
+/* Asegura que el botón tenga un margen superior adecuado en pantallas pequeñas */
+@media (max-width: 576px) {
+.d-grid {
+    margin-top: 1rem;
+}
+}  

@@ -1,0 +1,247 @@
+main {
+    flex-grow: 1;
+}
+
+body {
+    overflow-y: scroll;
+    scrollbar-width: none;
+    background-color: #f8f9fa;
+    color: #021024;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.bg-light {
+    background-color: #f8f9fa;
+}
+
+.bg-info {
+    background-color: #052659 !important;
+}
+
+.text-info {
+    color: #052659 !important;
+    /* Cambiado a #052659 para texto */
+}
+
+.viaje-card {
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    min-width: min-content !important;
+    margin-bottom: 20px;
+}
+
+.card {
+    border-color: #ffffff;
+}
+
+.viaje-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.hora-salida h5,
+.hora-llegada h5 {
+    font-size: 1.5em;
+    color: #052659;
+}
+
+.origen-destino p {
+    margin: 0;
+    font-size: 1.2em;
+    color: #021024;
+}
+
+.btn-custom-blue {
+    background-color: #052659;
+    border-color: #052659;
+    color: #ffffff;
+}
+
+.btn-custom-blue:hover {
+    background-color: #021024;
+    border-color: #021024;
+}
+
+.btn-custom-blue:focus {
+    box-shadow: 0 0 0 0.25rem rgba(2, 16, 36, 0.5);
+}
+
+/* Estilos para la tabla y enlaces */
+.table {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.table thead {
+    background-color: #052659;
+    color: #ffffff;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #e9ecef;
+}
+
+.list-group-item a {
+    color: #052659;
+}
+
+.list-group-item a:hover {
+    color: #021024;
+}
+
+/* Estilos para los encabezados de los ul */
+.list-group-item h4 {
+    color: #052659;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.card-header.custom-header {
+    background-color: #052659;
+    color: #ffffff;
+}
+
+/* Estilos adicionales específicos para esta página */
+
+body {
+    overflow-y: scroll;
+    scrollbar-width: none;
+    background-color: #f8f9fa;
+    color: #021024;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.bg-light {
+    background-color: #f8f9fa;
+}
+
+.bg-info {
+    background-color: #052659 !important;
+}
+
+.text-info {
+    color: #052659 !important;
+}
+
+.viaje-card {
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    min-width: min-content !important;
+    margin-bottom: 20px;
+}
+
+.card {
+    border-color: #ffffff;
+}
+
+.viaje-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.hora-salida h5,
+.hora-llegada h5 {
+    font-size: 1.5em;
+    color: #052659;
+}
+
+.origen-destino p {
+    margin: 0;
+    font-size: 1.2em;
+    color: #021024;
+}
+
+.btn-custom-blue {
+    background-color: #052659;
+    border-color: #052659;
+    color: #ffffff;
+}
+
+.btn-custom-blue:hover {
+    background-color: #021024;
+    border-color: #021024;
+}
+
+.btn-custom-blue:focus {
+    box-shadow: 0 0 0 0.25rem rgba(2, 16, 36, 0.5);
+}
+
+/* Estilos para la tabla y enlaces */
+.table {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.table thead {
+    background-color: #052659;
+    color: #ffffff;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #e9ecef;
+}
+
+.list-group-item a {
+    color: #052659;
+    text-decoration: none;
+    /* Quitar subrayado */
+    transition: color 0.3s;
+    /* Efecto de transición */
+}
+
+.list-group-item a:hover {
+    color: #021024;
+    /* Cambio de color al pasar el cursor */
+    text-decoration: none;
+    /* Asegurar que no haya subrayado */
+}
+
+/* Estilos para los encabezados de los ul */
+.list-group-item h4 {
+    color: #052659;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.card-header.custom-header {
+    background-color: #052659;
+    color: #ffffff;
+}
+
+/* Estilos para móviles */
+@media (max-width: 768px) {
+    .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}

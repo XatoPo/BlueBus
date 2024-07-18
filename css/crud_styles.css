@@ -1,0 +1,39 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa;
+    color: #021024;
+}
+
+footer {
+    background-color: #052659;
+}
+
+.table thead th {
+    background-color: #052659;
+    color: #ffffff;
+}
+
+.custom-btn {
+    background-color: #052659 !important;
+    border-color: #052659 !important;
+}
+
+.table td a {
+    color: #052659;
+}
+
+.btn-crud {
+    margin-right: 5px;
+}
+
+.btn-crud .bi {
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .table-responsive {
+        overflow-x: auto;
+    }
+}

@@ -1,0 +1,72 @@
+/* Estilos personalizados para el navbar */
+.navbar-brand {
+    margin-right: auto; /* Centrar el logo en la esquina izquierda */
+}
+
+/* CSS personalizado para ajustar el tamaño del logo */
+.navbar-brand img {
+    width: 50px; /* Tamaño del logo */
+    height: 50px;
+}
+
+/* Asegúrate de ajustar el logo para que se vea bien en el navbar */
+.logo {
+    max-height: 60px;
+    width: auto;
+}  
+
+@media (max-width: 991.98px) { /* Ajustar el tamaño del logo para dispositivos móviles */
+    .navbar-brand img {
+        max-width: 120px; /* Tamaño máximo del logo en dispositivos móviles */
+    }
+}
+
+.navbar {
+    background-color: #052659 !important; /* Azul oscuro para la barra de navegación */
+}
+
+.nav-link {
+    color: #fff; /* Texto blanco para los enlaces de navegación */
+}
+
+.navbar.sticky-top {
+    animation: fadeInDown 0.5s; /* Animación para mostrar la barra pegajosa */
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  top: 50%; /* Posiciona los botones de control en el centro vertical */
+  transform: translateY(-50%); /* Centra verticalmente los botones de control */
+  z-index: 1; /* Asegura que estén encima del contenido del slider */
+  color: #5483b3 !important; /* Cambia el color de las flechas del slider */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.75);
+}
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+    color: rgba(255, 255, 255, 1);
+}
+.dropdown-menu {
+    background-color: #052659; /* Matching the navbar color */
+    font-size: 14px; /* Tamaño de fuente más pequeño para dispositivos móviles */
+    padding: 0.5rem 0; /* Padding más ajustado para dispositivos móviles */
+}
+.dropdown-item {
+    color: white;
+}
+.dropdown-item:hover, .dropdown-item:focus {
+    background-color: #5483b3; /* Slightly lighter shade for hover */
+    color: white;
+}

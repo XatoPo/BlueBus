@@ -1,0 +1,48 @@
+/* Estilos generales para dispositivos móviles */
+@media (max-width: 576px) {
+    body {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
+
+/* Ajuste de la tabla para dispositivos móviles */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+        margin-bottom: 1rem;
+        background-color: transparent;
+    }
+
+    th,
+    td {
+        white-space: nowrap;
+        /* Evita el salto de línea en texto largo */
+    }
+
+    .table-responsive {
+        overflow-x: auto;
+        /* Permitir desplazamiento horizontal en tablas largas */
+    }
+}
+
+/* Ajuste para el formulario en dispositivos pequeños */
+@media (max-width: 576px) {
+    .modal-dialog {
+        max-width: calc(100% - 1rem);
+        /* Ancho máximo del modal menos el padding */
+    }
+}
+
+/* Centrar contenido en las celdas <td> */
+table {
+    width: 100%;
+    text-align: center; /* Centra el texto en todas las celdas */
+}
+
+/* Estilos para la tabla en dispositivos móviles */
+@media (max-width: 768px) {
+    table {
+        font-size: 0.9rem;
+    }
+}
